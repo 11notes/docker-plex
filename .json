@@ -15,7 +15,7 @@
       "plex": "https://www.plex.tv/"
     },
     "comparison": {
-      "images": ["lscr.io/linuxserver/plex", "ghcr.io/hotio/plex"]
+      "images": ["lscr.io/linuxserver/plex", "ghcr.io/hotio/plex", "plexinc/pms-docker"]
     }
   }
 }
