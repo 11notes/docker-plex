@@ -1,0 +1,31 @@
+name: "media"
+
+x-lockdown: &lockdown
+  # prevents write access to the image itself
+  read_only: true
+  # prevents any process within the container to gain more privileges
+  security_opt:
+    - "no-new-privileges=true"
+
+services:
+  plex:
+    image: "11notes/plex:1.42.1"
+    <<: *lockdown
+    environment:
+      TZ: "Europe/Zurich"
+    volumes:
+      - "plex.etc:/plex/etc"
+    tmpfs:
+      # /plex/tmp is required in read-only mode (can be used for transcode too)
+      - "/plex/tmp:size=8G,uid=1000,gid=1000"
+    ports:
+      - "32400:32400/tcp"
+    networks:
+      frontend:
+    restart: "always"
+
+volumes:
+  plex.etc:
+
+networks:
+  frontend:
