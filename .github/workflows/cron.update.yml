@@ -22,7 +22,7 @@ jobs:
 
       - name: cron-update / get latest version
         run: |
-          echo "LATEST_VERSION=$(curl -s https://api.github.com/repos/traefik/traefik/releases/latest | jq -r '.tag_name' | sed 's/v//')" >> "${GITHUB_ENV}"
+          echo "LATEST_VERSION=$(curl -s https://plex.tv/api/downloads/5.json | jq -r '.computer.Linux.version' | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')" >> "${GITHUB_ENV}"
           echo "LATEST_TAG=$(git describe --abbrev=0 --tags `git rev-list --tags --max-count=1` | sed 's/v//')" >> "${GITHUB_ENV}"
 
       - name: cron-update / setup node
