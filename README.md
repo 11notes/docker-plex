@@ -33,12 +33,12 @@ If you value security, simplicity and optimizations to the extreme, then this im
 # COMPARISON 🏁
 Below you find a comparison between this image and the most used or original one.
 
-| **image** | **size on disk** | **starts default as ([rootless](https://github.com/11notes/RTFM/blob/main/linux/container/image/rootless.md))** | **[distroless](https://github.com/11notes/RTFM/blob/main/linux/container/image/distroless.md)** |
-| ---: | ---: | :---: | :---: |
-| 11notes/plex:1.42.1 | 286MB | 1000:1000 | ❌ |
-| lscr.io/linuxserver/plex | 369MB | 0:0 | ❌ |
-| ghcr.io/hotio/plex | 462MB | 0:0 | ❌ |
-| plexinc/pms-docker | 354MB | 0:0 | ❌ |
+| **image** | **size on disk** | **init default as** | **[distroless](https://github.com/11notes/RTFM/blob/main/linux/container/image/distroless.md)** | supported architectures
+| ---: | ---: | :---: | :---: | :---: |
+| 11notes/plex:1.42.1 | 286MB | 1000:1000 | ❌ | amd64, armv7, arm64 |
+| plexinc/pms-docker | 354MB | 0:0 | ❌ | arm64, amd64, armv7 |
+| lscr.io/linuxserver/plex | 369MB | 0:0 | ❌ | amd64, arm64 |
+| hotio/plex | 462MB | 0:0 | ❌ | amd64, arm64 |
 
 # VOLUMES 📁
 * **/plex/etc** - Directory of Plex configuration
@@ -129,4 +129,4 @@ docker pull quay.io/11notes/plex:1.42.1
 # ElevenNotes™️
 This image is provided to you at your own risk. Always make backups before updating an image to a different version. Check the [releases](https://github.com/11notes/docker-plex/releases) for breaking changes. If you have any problems with using this image simply raise an [issue](https://github.com/11notes/docker-plex/issues), thanks. If you have a question or inputs please create a new [discussion](https://github.com/11notes/docker-plex/discussions) instead of an issue. You can find all my other repositories on [github](https://github.com/11notes?tab=repositories).
 
-*created 19.08.2025, 17:41:20 (CET)*
+*created 20.08.2025, 22:24:34 (CET)*
