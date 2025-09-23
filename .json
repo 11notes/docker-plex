@@ -3,7 +3,7 @@
   "name": "plex",
   "root": "/plex",
   "semver": {
-    "version": "1.42.1"
+    "version": "1.42.2"
   },
   "readme": {
     "description": "Run Plex rootless.",
@@ -15,7 +15,11 @@
       "plex": "https://www.plex.tv/"
     },
     "comparison": {
-      "images": ["lscr.io/linuxserver/plex", "ghcr.io/hotio/plex", "plexinc/pms-docker"]
+      "images": [
+        "lscr.io/linuxserver/plex",
+        "ghcr.io/hotio/plex",
+        "plexinc/pms-docker"
+      ]
     }
   }
 }
