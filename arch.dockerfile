@@ -4,7 +4,7 @@
 # GLOBAL
   ARG BUILD_BIN=/plex.deb \
       APP_VERSION=1.42.1
-  
+
 
 # :: FOREIGN IMAGES
   FROM 11notes/util:bin AS util-bin
