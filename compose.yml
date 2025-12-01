@@ -9,7 +9,7 @@ x-lockdown: &lockdown
 
 services:
   plex:
-    image: "11notes/plex:1.42.1"
+    image: "11notes/plex:1.42.2"
     <<: *lockdown
     environment:
       TZ: "Europe/Zurich"
