@@ -6,7 +6,7 @@
     "version": "1.42.2"
   },
   "readme": {
-    "description": "Run Plex rootless.",
+    "description": "run Plex rootless",
     "introduction": "A one-stop destination to stream movies, TV shows, and music, Plex is the most comprehensive entertainment platform available today. Available on almost any device, Plex is the first-and-only streaming platform to offer free ad-supported movies, shows, and live TV together with the ability to easily search—and add to your Watchlist—any title ever made, no matter which streaming service it lives on. Using the platform as their entertainment concierge, 17 million (and growing!) monthly active users count on Plex for new discoveries and recommendations from all their favorite streaming apps, personal media libraries, and beyond.",
     "parent": {
       "image": "11notes/debian:stable"
