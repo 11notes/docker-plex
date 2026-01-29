@@ -3,7 +3,7 @@
   "name": "plex",
   "root": "/plex",
   "semver": {
-    "version": "1.43.0"
+    "version": "1.42.2"
   },
   "readme": {
     "description": "run Plex rootless",
