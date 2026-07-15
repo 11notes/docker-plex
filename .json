@@ -3,10 +3,10 @@
   "name": "plex",
   "root": "/plex",
   "semver": {
-    "version": "1.43.2"
+    "version": "1.43.3"
   },
-  "grype":{
-    "fail":false
+  "grype": {
+    "fail": false
   },
   "readme": {
     "description": "run Plex rootless",
